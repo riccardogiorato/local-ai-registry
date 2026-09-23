@@ -1,12 +1,12 @@
 {
-  "accepted_at": "2026-09-23T11:14:49.398640Z",
+  "accepted_at": "2026-09-23T18:06:02.762265Z",
   "id": "qwen38-27b-exl3-4bpw-arcb70-vllm-exl3xpu-tp1-acceptance",
-  "measured_at": "2026-09-23T11:13:01.721641Z",
+  "measured_at": "2026-09-23T18:04:58.416401Z",
   "metrics": {
     "concurrency": 1,
-    "latest_point_at": "2026-09-23T11:13:01.721641Z",
+    "latest_point_at": "2026-09-23T18:04:58.416401Z",
     "max_context_tokens": 308,
-    "peak_generation_tps": 47.7,
+    "peak_generation_tps": 59.8,
     "peak_prompt_tps": null,
     "point_count": 1
   },
@@ -16,15 +16,15 @@
       "concurrency": 1,
       "context_tokens": 308,
       "decode_method": "client_post_first_token_estimate",
-      "decode_tok_s": 47.7,
-      "decode_tok_s_per_stream": 47.7,
+      "decode_tok_s": 59.8,
+      "decode_tok_s_per_stream": 59.8,
       "measurements": [
         {
-          "client_decode_ms": 19544.199540978298,
-          "client_decode_tok_s": 47.942613256449484,
+          "client_decode_ms": 13151.028749998659,
+          "client_decode_tok_s": 66.61075849294978,
           "decode_method": "client_post_first_token_estimate",
-          "decode_tok_s": 47.942613256449484,
-          "elapsed_ms": 29756.90120900981,
+          "decode_tok_s": 66.61075849294978,
+          "elapsed_ms": 23600.303000072017,
           "finish_reason": "stop",
           "prompt_tokens": 308,
           "response_model_ids": [
@@ -32,22 +32,22 @@
           ],
           "server_decode_tok_s": null,
           "server_prefill_tok_s": null,
-          "started_at": "2026-09-23T11:13:01.721641Z",
+          "started_at": "2026-09-23T18:04:58.416401Z",
           "timings": {},
-          "tokens": 938,
-          "ttft_ms": 10212.440334027633,
+          "tokens": 877,
+          "ttft_ms": 10449.052084004506,
           "usage": {
-            "completion_tokens": 938,
+            "completion_tokens": 877,
             "prompt_tokens": 308,
-            "total_tokens": 1246
+            "total_tokens": 1185
           }
         },
         {
-          "client_decode_ms": 31966.63458412513,
-          "client_decode_tok_s": 47.73727418768765,
+          "client_decode_ms": 11928.749332902953,
+          "client_decode_tok_s": 59.77156364861646,
           "decode_method": "client_post_first_token_estimate",
-          "decode_tok_s": 47.73727418768765,
-          "elapsed_ms": 32416.878000134602,
+          "decode_tok_s": 59.77156364861646,
+          "elapsed_ms": 12296.551750041544,
           "finish_reason": "stop",
           "prompt_tokens": 308,
           "response_model_ids": [
@@ -55,22 +55,22 @@
           ],
           "server_decode_tok_s": null,
           "server_prefill_tok_s": null,
-          "started_at": "2026-09-23T11:13:31.478845Z",
+          "started_at": "2026-09-23T18:05:22.017445Z",
           "timings": {},
-          "tokens": 1527,
-          "ttft_ms": 449.9769159592688,
+          "tokens": 714,
+          "ttft_ms": 367.50450008548796,
           "usage": {
-            "completion_tokens": 1527,
+            "completion_tokens": 714,
             "prompt_tokens": 308,
-            "total_tokens": 1835
+            "total_tokens": 1022
           }
         },
         {
-          "client_decode_ms": 45119.6888750419,
-          "client_decode_tok_s": 47.429405063645014,
+          "client_decode_ms": 28080.888000084087,
+          "client_decode_tok_s": 58.72321416598585,
           "decode_method": "client_post_first_token_estimate",
-          "decode_tok_s": 47.429405063645014,
-          "elapsed_ms": 45501.22583308257,
+          "decode_tok_s": 58.72321416598585,
+          "elapsed_ms": 28446.933457860723,
           "finish_reason": "stop",
           "prompt_tokens": 308,
           "response_model_ids": [
@@ -78,23 +78,23 @@
           ],
           "server_decode_tok_s": null,
           "server_prefill_tok_s": null,
-          "started_at": "2026-09-23T11:14:03.895829Z",
+          "started_at": "2026-09-23T18:05:34.314111Z",
           "timings": {},
-          "tokens": 2141,
-          "ttft_ms": 381.25012489035726,
+          "tokens": 1650,
+          "ttft_ms": 365.5636669136584,
           "usage": {
-            "completion_tokens": 2141,
+            "completion_tokens": 1650,
             "prompt_tokens": 308,
-            "total_tokens": 2449
+            "total_tokens": 1958
           }
         }
       ],
-      "output_tokens": 1527,
+      "output_tokens": 877,
       "peak_vram_gb": null,
       "prefill_tok_s": null,
       "samples": 3,
       "status": "accepted",
-      "ttft_ms_p50": 450.0
+      "ttft_ms_p50": 367.5
     }
   ],
   "schema_version": "local-ai-registry/v1",
