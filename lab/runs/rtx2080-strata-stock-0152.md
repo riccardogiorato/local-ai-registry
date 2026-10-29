@@ -81,8 +81,8 @@ not an engine-only rate). The streamed speed answer ran to its natural end.
 The before-start MemAvailable was **59,814,916,096 bytes** and the minimum
 through startup and all gates was **19,494,662,144 bytes**. The largest decline
 was **40.320253952 GB**, leaving **7.68 GB** of headroom under the declared
-48 GB available-RAM requirement. The full 500 ms trace and summary accompany
-the lab run. The owner's usual Strata service was restored afterward.
+48 GB available-RAM requirement. The concise memory summary accompanies the lab run; the full 500 ms trace
+is retained locally to keep the contribution focused. The owner's usual Strata service was restored afterward.
 
 The model metadata date uses the original fine-tune repository's first-publication timestamp (2026-09-22); the pinned Swift 1.5 GGUF repository was created 2026-09-24. Source: https://huggingface.co/api/models/ukisai/Swift-Qwen3.8-Flash-Next.
 
