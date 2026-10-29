@@ -51,8 +51,8 @@ actual kernel selection remains the upstream runtime's.
 
 `needs.host_ram_gb` declares 48 GB of available RAM, not 48 GB installed RAM.
 The run samples MemAvailable every 500 ms starting before model launch through
-all acceptance gates; the summary records the largest decline and safety
-headroom. `disk_gb: 90` includes conservative setup space for weights, generated
+all acceptance gates; the measurements below record the largest decline and
+safety headroom. `disk_gb: 90` includes conservative setup space for weights, generated
 packs, MTP source/packed/runtime files and the official engine. Models and PLE
 must be on local NVMe, since PLE is mapped during serving.
 
@@ -66,8 +66,8 @@ it does not automatically prepare a Strata installation.
 The normal custom Strata service is stopped for the attempt and restored after
 it. Upstream `lab/lab.py try --on endpoint` runs all gates unchanged with no
 answer or thinking caps. The lab writes the recipe only after every gate passes.
-Measured acceptance and host-memory results are recorded in the accompanying
-JSON evidence and summary.
+The passing acceptance proof accompanies these notes; host-memory results
+are recorded below.
 
 A first startup with 4096-token chunks and auto expert-cache sizing left no cache slots on 8 GB. The accepted candidate uses 512-token chunks to reserve room for the expert cache without custom memory-loan patches.
 
@@ -81,8 +81,8 @@ not an engine-only rate). The streamed speed answer ran to its natural end.
 The before-start MemAvailable was **59,814,916,096 bytes** and the minimum
 through startup and all gates was **19,494,662,144 bytes**. The largest decline
 was **40.320253952 GB**, leaving **7.68 GB** of headroom under the declared
-48 GB available-RAM requirement. The concise memory summary accompanies the lab run; the full 500 ms trace
-is retained locally to keep the contribution focused. The owner's usual Strata service was restored afterward.
+48 GB available-RAM requirement. The full 500 ms trace is retained locally; these notes preserve the measured
+baseline, minimum and headroom. The owner's usual Strata service was restored afterward.
 
 The model metadata date uses the original fine-tune repository's first-publication timestamp (2026-09-22); the pinned Swift 1.5 GGUF repository was created 2026-09-24. Source: https://huggingface.co/api/models/ukisai/Swift-Qwen3.8-Flash-Next.
 
