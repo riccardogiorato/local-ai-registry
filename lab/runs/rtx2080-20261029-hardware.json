@@ -1,8 +1,0 @@
-{
-  "at": "2026-10-29T00:17:42.702326+00:00",
-  "gpu_query_csv": "name, memory.total [MiB], driver_version, compute_cap, power.limit [W], pci.device_id\nNVIDIA GeForce RTX 2080, 8192 MiB, 615.78.08, 7.5, 165.00 W, 0x1E8710DE\n",
-  "cpu": "Intel(R) Core(TM) i5-9600K CPU @ 3.70GHz",
-  "logical_cpus": 6,
-  "host_ram_bytes": 67248697344,
-  "desktop_gpu": "Intel iGPU; NVIDIA card headless"
-}

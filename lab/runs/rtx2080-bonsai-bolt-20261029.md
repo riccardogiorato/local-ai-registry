@@ -59,8 +59,8 @@ The first Bolt run with template defaults failed the reasoning gate: it
 answered 391 correctly but returned no separate thought. Inspection of the
 pinned template shows `enable_thinking | default(false)`. The submitted launch
 uses `--reasoning on` and a template generation-prefix override; the lab
-is unchanged. The failed attempt remains in the evidence alongside the final
-attempt. Thinking is not capped.
+is unchanged. Only the final passing attempt is included in this contribution;
+diagnostic attempts are retained locally. Thinking is not capped.
 
 Bonsai passed all six gates: 71.3 tok/s decode; 25740 context prompt tokens in 23.6 seconds including generation, correct access code. The lab prefill field is 1091 tok/s (whole-request wall time).
 
